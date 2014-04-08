@@ -1,0 +1,20 @@
+Name: patchutils
+Summary: A collection of programs for manipulating patch files.
+Version: 0.3.3
+Release: 1
+Group: Applications/System
+URL: http://cyberelk.net/tim/patchutils/
+License: GPL
+Sources:
+- '%{name}-%{version}.tar.bz2'
+Description: |
+  This is a collection of programs that can manipulate patch files in
+  useful ways such as interpolating between two pre-patches, combining
+  two incremental patches, fixing line numbers in hand-edited patches,
+  and simply listing the files modified by a patch.
+Configure: none
+Builder: make
+PkgConfigBR: []
+Requires: []
+Files: 
+- '%{_bindir}'
